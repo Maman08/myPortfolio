@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #000000;">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <h1 style="margin-left: 35px;"><span style="color: #00AAB4;">M</span>ritunjay</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto nav-component">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#project">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-me">Contact</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+        <!-- nav end -->
+        <!-- my intro start -->
+        <div class="container-fluid" style="background-color: #171717; ">
+            <div class="row" id="home">
+                <div class="col-md-12" style="margin-top: -15px;"><hr></div>
+            </div>
+            <div class="row ">
+                <div class="col-md-6 text-white text-center d-flex flex-column align-items-center py-4">
+                    <div class="row name">
+                        <div class="col-md-12">
+                            <h3 class="introtext">Hello i am </h3>
+                            <h1 class="myname introtext">Mritunjay singh</h1>
+                        </div>
+                    </div>
+                    <div class="horizontal-line"></div>
+                    <div class="row proffesion">
+                        <div class="col-md-12">
+                            <h3 introtext>I am </h3>
+                            <h1 class="myproffesion introtext">Web Developer</h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center py-5 mx-5 resumeGithub">
+                        <div class="col-md-6 px-4"><button id="resume" class="btn_link">Resume <i class="bi bi-link-45deg"></i></button></div>
+                        <div class="col-md-6 px-4"><button id="github" class="btn_link"><a class="text-white" style="text-decoration: none;" href="https://github.com/mritunjay8">Github</a> <i class="bi bi-link-45deg"></i> </button></div>
+                    </div>
+                </div>
+                <div class="col-md-6 myphoto text-center align-items-center ">
+                    <img class="img-fluid my-photo" src="profile-pic (9).png" alt="Profile Picture">
+                </div>
+                
+            </div>
+            <!-- my intro end -->
+
+           
+    <!-- about section start -->
+    <div class="row justify-content-around py-3 my-3 text-white" id="about">
+        <div class="col-md-3">
+            <img class="img-fluid py-5 aboutphoto" src="profile-pic (6).png" alt="">
+        </div>
+        <div class="col-md-7">
+            <h2>About Me</h2>
+            <p class="aboutmepara">Enthusiastic second-year BTech student with a deep passion for web development and a keen interest in various other tech domains. Dedicated to learning and exploring new technologies, I strive to blend creativity with functionality to bring innovative solutions to life. Eager to contribute and grow in the ever-evolving world of technology.
+            </p>
+            <div class="row justify-content-center">
+                <div class="col-md-12 d-flex justify-content-around py-2 education-skills">
+                    <h4><a id="buttonEvent1" class="text-white tablinks" href="#" onclick="opentab('skill')">Skills</a></h4>
+                    <h4><a id="buttonEvent2" class="text-white tablinks" href="#" onclick="opentab('Educations')">Education</a></h4>
+                </div>
+            </div>
+            <!-- skills start -->
+            
+            <div class="row  justify-content-around py-3 tabContents" id="skill">
+                <!-- Content for Skills -->
+                <div class="col-md-3 skillsbg"><img class="img-fluid" src="weblogo-removebg-preview.png" alt=""><h5 class="text-white text-center skilname">Web development</h5></div>
+                <div class="col-md-3 skillsbg"><img class="img-fluid my-3" src="cp-removebg-preview (1).png" alt=""><h5 class="text-white text-center skilname">Programming</h5></div>
+                <div class="col-md-3 skillsbg"><img class="img-fluid" src="sql-removebg-preview.png" alt=""><h5 class="text-white text-center">SQL</h5></div>
+            </div>
+                <!-- education start -->
+                <div class="row tabContents justify-content-around" id="Educations">
+                
+                    <!-- Content for Education -->
+                    
+                        <div class="col-md-5 school marks rounded">
+                            <div class="outer">
+                                <div class="inner ">
+                                    <div id="number">
+                                        94%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highSchool"><h5>High School</h5></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#00AAB4" />
+                                        <stop offset="100%" stop-color="#465058" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                        <div class="col-md-5 school marks rounded">
+                            <div class="outer ">
+                                <div class="inner ">
+                                    <div id="number">
+                                        94%
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="highSchool"><h5>High School</h5></div>
+                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+                                <defs>
+                                    <linearGradient id="GradientColor">
+                                        <stop offset="0%" stop-color="#00AAB4" />
+                                        <stop offset="100%" stop-color="#465058" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    
+                
+                <!-- education end -->
+            
+        </div>
+    </div> 
+        <!-- about me end -->
+    
+            
+
+
+            <!-- project strat -->
+              
+
+            <div class="row  myprojects" id="project">
+                <div class="col mx-5 my-2 py-4"><h2 class="text-white">My Projects</h2></div>
+            </div>
+            <div class="row justify-content-center workPhoto ">
+                <div class="col-md-3 text-white check mx-3 my-3 skillsbg2">
+                    <img src="restaurent.png" alt="" class="img-fluid rounded">
+                    <div class="layer">
+                        <h3>Restaurent App</h3>
+                        <p>extending Zomato feature</p>
+                        <a href="https://restaurent-project-one.vercel.app/"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 text-white check mx-3 my-3 skillsbg2">
+                    <img src="sleep.png" alt="" class="img-fluid rounded">
+                    <div class="layer">
+                        <h3>Sleep Tracker</h3>
+                        <p>Track and helps in better sleep.</p>
+                        <a href="https://sleeptracker.vercel.app/"><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 text-white check mx-3 my-3 skillsbg2">
+                    <img src="imgGenerator.jpg" alt="" class="img-fluid rounded">
+                    <div class="layer">
+                        <h3>Image Generator</h3>
+                        <p>Generates the serched images.</p>
+                        <a href=""><i class="bi bi-box-arrow-up-right"></i></a>
+                    </div>
+    
+                </div>
+                
+                
+            </div>
+    
+    
+    
+            <!-- my projects end -->
+            <!-- contact start -->
+            <div class="row justify-content-center" id="contact-me my-5 py-5">
+                <div class="col-md-5 my-5 ">
+                    <h2 class="text-white">Contact Me</h2>
+                    <div class="my-2">
+                        <i class="bi bi-envelope-fill text-white"></i>
+                        <a href="mailto:a34mritunjaysingh@gmail.com" class="text-decoration-none text-white">a34mritunjaysingh@gmail.com</a>
+                    </div>
+                    <div>
+                        <i class="bi bi-telephone-fill text-white" ></i>
+                        <a href="tel:6306426317" class="text-decoration-none text-white">6306426317</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="" class=" social-media"><i class="bi bi-facebook"></i></a>
+                        <a href="" class=" social-media"><i class="bi bi-twitter "></i></a>
+                        <a href="https://www.linkedin.com/in/mritunjay-singh-a91b38256/" class=" social-media"><i class="bi bi-linkedin"></i></a>
+                        <a href="" class=" social-media"><i class="bi bi-instagram"></i></a>
+                    </div>
+ 
+                </div>
+                <div class="col-md-5 form my-5">
+                    <form name="submit-to-google-sheet">
+                        <input class="form-control mb-3" type="text" name="Name" placeholder="Your Name" required>
+                        <input class="form-control mb-3" type="email" name="email" placeholder="Your Email" required>
+                        <textarea class="form-control mb-3" name="Message" rows="6" placeholder="Your Message" style="background-color:rgba(247, 246, 246, 0.968) ;"></textarea>
+                        <p id="msg" style="font-weight: 500;" class="text-success "></p>
+                        <button class="btn  btn_link text-white" style="background-color: #00AAB4;" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            
+             <!-- contact end -->
+             <div class="row justify-content-center text-white bg-secondary my-5">
+                <div class="col text-center py-3 ">
+                    <p>&copy; 2023 YourName. All Rights Reserved.</p>
+                </div>
+             </div>
+            <!-- container end -->
+        </div>
+            
+            <!-- container end -->
+    
+        </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>

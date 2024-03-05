@@ -1,0 +1,337 @@
+*{
+    box-sizing: border-box;
+}
+body, html {
+    height: 100%;
+}
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar-brand{
+    text-shadow: 0 0 6px rgba(238, 238, 230, 0.8); 
+}
+.nav-item a{
+    text-shadow: 0 0 2px rgba(238, 238, 230, 0.8); 
+}
+.nav-component{
+    
+    font-size: 18px;
+    margin-right: 10px;
+}
+.navbar-nav .nav-link {
+    color: white !important;
+}
+
+/* Style for anchor tags */
+.nav-component a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+    
+}
+/* Style for anchor tag underline */
+.nav-component a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #00AAB4;
+    transition: width 0.5s, transform 0.3s; /* Add transform to the transition */
+}
+
+/* Hover effect for anchor tags */
+.nav-component a:hover::before {
+    width: 100%;   
+    background-color: #00AAB4; /* Set the desired color on hover */
+}
+#theme a:hover::before{
+   width: 0;
+}
+
+
+
+
+
+
+
+.btn_link{
+    height: 35px;
+    width: 100px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: white;
+    border: 1.5px solid #00AAB4;
+    padding: 5px;
+    box-shadow: 1px 1px 5px white    
+}
+.btn_link:hover{
+    transform: scale(1.1);
+}
+#resume{
+    background-color: #00AAB4;
+}
+#github{
+    background-color:#465058;
+}
+.my-photo {
+   
+    border-radius: 50%;
+    border: 1px solid t; /* Set a transparent border */
+    box-shadow: 0 0 40px rgba(0, 55, 255, 0.7) ;
+   
+}
+.name{
+    background-color: #171717;
+    padding: 40px;
+    width: 50%;
+    height: 50%;
+    margin-right: 30px;
+    border: solid 1px rgb(125,123,123) ;
+    box-shadow: 10px 10px 5px #00AAB4 inset;
+    border-bottom: none;
+    transform: translateY(8px);
+    
+}
+.horizontal-line {
+    border-top: 1px solid rgb(125, 123, 123);
+    width: 100%;
+    margin-top: 10px; /* Adjust the margin as needed */
+    
+}
+.proffesion{
+    background-color: #171717;
+    padding: 40px;
+    width: 50%;
+    height: 50%;
+    transform: translate(70px,1px);
+    border: solid 1px rgb(125, 123, 123) ;
+    box-shadow: 10px 10px 5px #00AAB4;
+    border-top: none;
+}
+.myproffesion, .myname {
+    color: #00AAB4;
+    text-shadow:  rgba(0, 170, 180, 0.8); /* Add glowing shadow effect */
+}
+/* Add this CSS to your existing styles in index.css */
+
+/* Add this CSS to your existing styles in index.css */
+
+/* Style for anchor tags in education-skills */
+.education-skills a {
+    position: relative;
+    text-decoration: none;
+    color: white;
+}
+
+/* Style for underline in education-skills */
+.education-skills a::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #00AAB4;
+    transition: width 0.5s, transform 0.3s; /* Add transform to the transition */
+}
+
+/* Hover effect for anchor tags in education-skills */
+.education-skills a:hover::before {
+    width: 100%;
+    background-color: #00AAB4; /* Set the desired color on hover */
+}
+
+.aboutmepara{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+.skillsbg {
+    background-color: rgb(55, 52, 52);
+    border-radius: 10px;
+    box-shadow: rgba(213, 213, 232, 0.25) 0 50px 100px -20px, rgba(223, 212, 212, 0.3) 0 30px 60px -30px;
+}
+.skillsbg:hover{
+    transform: scale(1.1);
+}
+@media (max-width: 768px) {
+    .skillsbg h5 {
+        font-size: 15px; 
+    }
+}
+@media (max-width: 768px) {
+    .introtext {
+        font-size: 23px;
+    }
+}
+@media(max-width:480px){
+     #skill{
+       gap: 30px;
+       padding: 25px;
+       
+     }
+     .resumeGithub{
+        gap: 16px;
+     }
+     .my-photo{
+        display: none;
+    
+     }
+     .aboutphoto{
+        margin-top: -100px;
+     }
+}
+/* Styles for a dark gray (#171717) background */
+.school {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+/* Styles for a black background */
+.outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(255, 255, 255, 0.15), -6px -6px -10px -1px rgba(248, 242, 242, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.inner {
+    height: 120px;
+    width: 120px;
+    transform: translateX(-11px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(249, 247, 247, 0.2), inset -4px -4px 6px -1px rgba(248, 246, 246, 0.7),
+    -0.5px -0.5px 0px rgb(242, 240, 240),
+    0.5px 0.5px 0px rgba(255, 255, 255, 0.15),
+    0px 12px 10px -10px rgba(255,255,255,0.05);
+}
+#number{
+    font-weight: 600;
+
+}
+circle{
+    fill: none;
+    stroke:url(#GradientColor) ;
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset:472 ;
+    animation:anim 2s linear forwards ;
+
+
+}
+svg{
+    position:absolute ;
+    top: 0;
+    left: 0;
+    transform: translatex(37px);
+}
+@keyframes anim{
+    100%{
+         stroke-dashoffset:85;
+    }
+}
+.marks{
+    background-color: #465058;
+}
+
+
+
+.myworkh{
+    padding: 20px;
+    margin-left: 130px;
+    margin-top: 50px;
+ } 
+ .check{
+    position: relative;
+ }
+ .layer{
+    width: 94%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#00AAB4);
+    border-radius: 5px;
+   overflow: hidden;
+    left: 12;
+    bottom: 0;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: height 0.5s;
+
+    
+ }
+ .layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+ }
+ .layer a{
+    margin-top: 20px;
+    color: #00AAB4;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 60px;
+ }
+ .workPhoto :hover .layer{
+  height: 100%;
+  padding: 0px;
+ }
+ .form  input[type="text"], input[type="email"], textarea {
+    background-color:rgba(247, 246, 246, 0.968); 
+    color: black;
+}
+.social-links{
+    display: flex;
+    gap: 12px;
+    padding: 5px;
+}
+.social-media{
+    color: rgb(14, 14, 14);
+    transition: transform 0.2s;
+    background-color: #ecf7f8;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    padding-top: 2px;
+    
+    
+}
+.social-media:hover{
+    color: #00AAB4;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+.skillsbg2{
+    background-color: rgb(55, 52, 52);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(213, 213, 232, 0.25) 0 50px 100px -20px, rgba(223, 212, 212, 0.3) 0 30px 60px -30px;
+}
+
+#Educations{
+    display: none;
+}
+
